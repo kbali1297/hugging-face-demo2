@@ -19,10 +19,10 @@ jobs:
       env: 
         HF: ${{ secrets.HF }}
       run: git remote add space https://kbali1297:$HF@huggingface.co/spaces/kbali1297/demo2
-    - name: Push to hub
-      env:
-        HF: ${{ secrets.HF }}
-      run: git push --force https://kbali1297:$HF@huggingface.co/spaces/kbali1297/demo2 main
+    # - name: Push to hub
+    #   env:
+    #     HF: ${{ secrets.HF }}
+    #   run: git push --force https://kbali1297:$HF@huggingface.co/spaces/kbali1297/demo2 main
       
     - name: Install dependencies
       run: make
